@@ -56,12 +56,12 @@ export default function InitConf(){
             <MainTitleBar/>
 
             <div className={classes.container}>
-                <h1>Hola inicio, aca voy a cargar la cofiguracion inicial del sistema</h1>
+                <h1>Pagina de Configuracion Inicial del Sistema</h1>
             <ListItem button component={Link} to="/Dashboard">
                 <ListItemIcon>
                     <HomeTwoTone />
                 </ListItemIcon>
-                <ListItemText primary="Inicio" />
+                <ListItemText primary="Aceptar y continuar" />
             </ListItem>
             </div>
         </div>

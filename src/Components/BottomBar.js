@@ -5,7 +5,7 @@ import List from "@material-ui/core/List";
 import {mainListItems, secondaryListItems} from "./ListItems";
 import Drawer from "@material-ui/core/Drawer";
 import {makeStyles} from "@material-ui/core/styles";
-
+import EventText from "../Components/EventText";
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     drawer: {
@@ -26,16 +26,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function LatBar(props){
+export default function BottomBar(props){
     const classes = useStyles();
     return(
         <Drawer className={classes.drawer} variant="permanent" classes={{ paper: classes.drawerPaper, }} >
-            <Toolbar />
+
             <div className={classes.drawerContainer}>
                 <Divider />
-                <List>{mainListItems}</List>
+
                 <Divider />
-                <List>{secondaryListItems}</List>
+
             </div>
         </Drawer>
     );

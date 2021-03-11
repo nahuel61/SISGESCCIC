@@ -17,7 +17,7 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from '../Components/listItems';
+import { mainListItems, secondaryListItems } from '../Components/ListItems';
 import Chart from '../Components/Chart';
 import Deposits from '../Components/Deposits';
 import Orders from '../Components/Orders';
@@ -26,6 +26,8 @@ import CardsHeader from "../Components/CardsHeader";
 import MainBar from "../Components/MainTitleBar";
 import MainTitleBar from "../Components/MainTitleBar";
 import LatBar from "../Components/LatBar";
+import BottomBar from "../Components/BottomBar";
+import EventText from "../Components/EventText";
 
 function Copyright() {
     return (
@@ -102,32 +104,17 @@ export default function Dashboard() {
             <CssBaseline />
             <MainTitleBar/>
             <LatBar/>
+
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                         {/* Chart */}
-                        <Grid item xs={12} md={8} lg={9}>
-                            <Paper className={fixedHeightPaper}>
-                                <Chart />
-                            </Paper>
-                        </Grid>
-                        {/* Recent Deposits */}
-                        <Grid item xs={12} md={4} lg={3}>
-                            <Paper className={fixedHeightPaper}>
-                                <Deposits />
-                            </Paper>
-                        </Grid>
-                        {/* Recent Orders */}
-                        <Grid item xs={12}>
-                            <Paper className={classes.paper}>
-                                <Orders />
-                            </Paper>
-                        </Grid>
+
                         {/* Cards */}
                         <Grid item xs={12} md={8} lg={9}>
 
-                            <Cards titulo="Que es esto" texto="692"/>
+                            <Cards titulo="aca van los datos cargados inicialmente" texto="692"/>
 
                         </Grid>
                     </Grid>
